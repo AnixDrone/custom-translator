@@ -12,8 +12,8 @@ export class OriginalWordService {
   constructor(private http: HttpClient) {
   }
 
-  private url = 'api/eng';
- // private url = 'https://custom-translator.herokuapp.com/api/eng';
+  //private url = 'api/eng';
+  private url = 'https://custom-translator.herokuapp.com/api/eng';
 
 
   searchOriginalWords(term: string): Observable<Word[]> {
