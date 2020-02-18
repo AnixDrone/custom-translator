@@ -1,0 +1,11 @@
+.contain{
+  position: relative;
+  left: 26%;
+}
+.row{
+  width: 60%;
+}
+.submit{
+  position: relative;
+  left: 13%;
+}

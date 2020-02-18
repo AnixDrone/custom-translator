@@ -1,0 +1,17 @@
+<div class="centar">
+  <mat-form-field class="inputShit" appearance="outline">
+    <mat-label>Enter original word</mat-label>
+    <input matInput type="text" [(ngModel)]="originalWord" (input)="search(originalWord)" autocomplete="off">
+  </mat-form-field>
+
+  <mat-chip-list class="list">
+    <mat-chip *ngFor="let word of words$| async">
+      <div *ngIf="id!=word.id" class="innerList" >
+        <div>{{word.translated}}</div>
+        <div><mat-icon (click)="deleteWord(word.id);search(originalWord)" color="warn">delete</mat-icon></div>
+      </div>
+      <div *ngIf="id==word.id"><mat-icon color="primary">check</mat-icon></div>
+    </mat-chip>
+  </mat-chip-list>
+</div>
+

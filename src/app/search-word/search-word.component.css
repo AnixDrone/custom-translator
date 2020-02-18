@@ -1,0 +1,29 @@
+.centar {
+  position: relative;
+
+}
+
+.inputShit {
+  top: 10px;
+  margin: auto;
+  left: 26%;
+
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+.stuff {
+
+  display: flex;
+}
+.list{
+
+  position: relative;
+  left: 26%;
+}
+.innerList{
+  display: flex;
+}
