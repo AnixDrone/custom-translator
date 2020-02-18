@@ -1,0 +1,12 @@
+
+
+.button-row button {
+  margin-left: 8px;
+}
+
+.parent{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
